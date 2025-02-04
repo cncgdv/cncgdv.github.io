@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDV CNC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/style.css">
+    <html lang="{{LANG}}">
+    <meta name="description" content="{{DESCRIPTION}}">
+    <meta name="og:title" property="og:title" content="{{TITLE}}">
+    <meta name="og:type" property="og:type" content="website">
+    <meta name="og:description" property="og:description" content="{{DESCRIPTION}}">
+    <meta name="og:image" property="og:image" content="/images/og_image.png">
+
+    <link rel="alternate" hreflang="en" href="https://gdvcnc.com/" />
+    <link rel="alternate" hreflang="de" href="https://gdvcnc.com/de" />
+    <link rel="alternate" hreflang="sk" href="https://gdvcnc.com/sk" />
+
+
+</head>
+<body>
+    <header>
+        <label class="language-selector" for="language">
+            <input type="checkbox" name="language" id="language">
+            <div class="list">
+                <span>{{LANGUAGE}}</span>
+                <a href="/">English</a>
+                <a href="/de">Deutsch</a>
+                <a href="/sk">Slovenčina</a>
+            </div>
+        </label>
+        <h1>{{TITLE}}</h1>
+        <em>{{DESCRIPTION}}</em>
+    </header>
+    <main>
+        <section class="bi lf">
+            <div>
+                <h2>{{FEATURE_A}}</h2>
+                <p>
+                    {{FEATURE_A_DESCRIPTION}}
+                </p>
+            </div>
+            <div>
+                <img src="/images/r3.jpg" alt="">
+            </div>
+        </section>
+
+        <section class="bi inverse">
+            <div>
+                <h2>{{FEATURE_B}}</h2>
+                <p>
+                    {{FEATURE_B_DESCRIPTION}}
+                </p>
+            </div>
+
+            <div>
+                <img src="/images/r8.jpg" alt="">
+            </div>
+
+
+        </section>
+
+        <section class="bi">
+            <div>
+                <h2>{{FEATURE_C}}</h2>
+                <p>
+                    {{FEATURE_C_DESCRIPTION}}
+                </p>
+            </div>
+
+            <div>
+                <img src="/images/r7.jpg" alt="">
+            </div>
+
+        </section>
+        
+        <section class="center" id="cta">
+            <h2>{{CTA_TITLE}}</h2>
+            <a href="#cta" class="button">{{CTA_BUTTON}}</a>
+        </section>
+
+    </main>
+    <footer>
+        <div class="column">
+            <div class="column">
+                <h3>{{FOOTER_NAME}}</h3>
+                <address>
+                    {{FOOTER_ADDRESS}}
+                </address>
+            </div>
+        </div>
+        <div class="column">
+            <a href="mailto:{{FOOTER_MAIL}}">{{FOOTER_MAIL}}</a><br><br>
+            <div>{{FOOTER_PHONE}}</div> <br><br>
+            <div>{{FOOTER_COPYRIGHT}}</div>
+
+        </div>
+    </footer>
+</body>
+</html>
