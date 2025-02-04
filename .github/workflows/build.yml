@@ -3,16 +3,16 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - main  # Trigger on push to 'main'
+      - main
+  workflow_dispatch:
 
-      
 permissions:
   contents: read
   pages: write
   id-token: write  # Required for OIDC authentication
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -27,7 +27,14 @@ jobs:
       - name: Run the build script
         run: python build.py
 
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v2
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          publish_dir: ./dist
+          path: './dist'  # Ensure this is the correct path to your build output
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
