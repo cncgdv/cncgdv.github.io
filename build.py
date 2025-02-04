@@ -1,10 +1,13 @@
 import json
 import os
+import shutil
 
 # Paths
 template_path = 'index.template.html'
 locales_dir = 'locales'
 output_dir = 'dist'
+images_dir = 'images'
+assets_dir = 'assets'
 
 # Load template
 with open(template_path, 'r', encoding='utf-8') as file:
@@ -16,6 +19,15 @@ os.makedirs(output_dir, exist_ok=True)
 # Find all placeholders in the template
 import re
 placeholders = re.findall(r'\{\{(.*?)\}\}', template)
+
+# Function to copy static files
+def copy_static_files(src_dir, dest_dir):
+    if os.path.exists(src_dir):
+        shutil.copytree(src_dir, dest_dir, dirs_exist_ok=True)
+
+# Copy static assets to dist
+copy_static_files(images_dir, f'{output_dir}/images')
+copy_static_files(assets_dir, f'{output_dir}/assets')
 
 # Process each language file
 for locale_file in os.listdir(locales_dir):
