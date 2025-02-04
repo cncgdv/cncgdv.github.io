@@ -157,6 +157,8 @@ main > section {
     align-items: center;
     justify-content: center;
 
+    text-align: center;
+
     gap: 2rem;
 
     padding-top: 12rem;
@@ -192,5 +194,62 @@ footer {
     justify-content: space-between;
     a {
         color: white;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    header {
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        h1 {
+            font-size: 3rem;
+        }
+    }
+
+    main {
+        section {
+            padding: 2rem;
+        }
+    }
+
+    .bi {
+        display: flex;
+        flex-direction: column;
+
+        & > div {
+            width: 100%;
+        }
+
+
+        &.lf {
+            grid-template-columns: 1fr;
+            grid-template-rows: 3fr 2fr;
+        }
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 1.1rem;
+    }
+
+    header {
+        h1 {
+            font-size: 2em;
+        }
+        span {
+            font-size: 1.2rem;
+        }
     }
 }
