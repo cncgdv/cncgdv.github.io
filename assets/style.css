@@ -64,6 +64,8 @@ header {
 
 
     background-image: url("/images/city.jpg");
+    background-position: center;
+    background-size: cover;
     background-size: cover;
 
     color: #fff;
