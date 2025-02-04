@@ -1,3 +1,7 @@
+:root {
+    --border-radius: 4rem;
+}
+
 *,*::before,*::after {
     box-sizing: border-box;
     max-width: 100%;
@@ -148,7 +152,7 @@ main > section {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        border-radius: 4rem;
+        border-radius: var(--border-radius);
         max-height: 70vh;
     }
 
@@ -181,13 +185,16 @@ a.button {
     color: #fff;
     padding: 1.2rem 2.2rem;
     font-size: 1.6rem;
-    border-radius: 1rem;
+    border-radius: var(--border-radius);
     text-decoration: none;
     transition: all .3s;
+    margin: 0 0.5rem
 }
 
 a.button:hover {
     transform: scale(1.03) rotate(-1deg);
+    padding: 1.2rem 2.7rem;
+    margin: 0 0;
 }
 
 
@@ -203,6 +210,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
     a {
         color: white;
     }
