@@ -149,6 +149,15 @@ main > section {
         border-radius: 4rem;
         max-height: 70vh;
     }
+
+    &.inverse {
+        & > div:first-child {
+            order: 2;
+        }
+        & > div:nth-child(2) {
+            order: 1;
+        }
+    }
 }
 
 .center {
@@ -204,14 +213,17 @@ footer {
         gap: 1rem;
         text-align: center;
         h1 {
-            font-size: 3rem;
+            font-size: 4rem;
         }
     }
 
     main {
+        padding: 3rem 1rem;
+
         section {
             padding: 2rem;
         }
+    
     }
 
     .bi {
@@ -227,6 +239,17 @@ footer {
             grid-template-columns: 1fr;
             grid-template-rows: 3fr 2fr;
         }
+
+        &.inverse {
+            & > div:first-child {
+                order: 1;
+            }
+            & > div:nth-child(2) {
+                order: 2;
+            }
+        }
+
+        
     }
 
     h2 {
