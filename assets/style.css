@@ -357,6 +357,7 @@ footer {
                     opacity: 0;
                     visibility: hidden;
                     height: 0;
+                    padding: 0;
                 }
                 & > a:not(:first-child) {
                     height: auto;
