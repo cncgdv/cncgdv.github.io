@@ -45,7 +45,7 @@
                 </p>
             </div>
             <div>
-                <img src="/images/r3.jpg" alt="">
+                <img src="/images/feature_a.jpg" alt="">
             </div>
         </section>
 
@@ -58,7 +58,7 @@
             </div>
 
             <div>
-                <img src="/images/r8.jpg" alt="">
+                <img src="/images/feature_b.jpg" alt="">
             </div>
 
 
@@ -73,14 +73,14 @@
             </div>
 
             <div>
-                <img src="/images/r7.jpg" alt="">
+                <img src="/images/feature_c.jpg" alt="">
             </div>
 
         </section>
         
         <section class="center" id="cta">
             <h2>{{CTA_TITLE}}</h2>
-            <a href="#cta" class="button">{{CTA_BUTTON}}</a>
+            <a class="button" id="cta_button">{{CTA_BUTTON}}</a>
         </section>
 
     </main>
@@ -97,8 +97,48 @@
             <a href="mailto:{{FOOTER_MAIL}}">{{FOOTER_MAIL}}</a><br><br>
             <div>{{FOOTER_PHONE}}</div> <br><br>
             <div>{{FOOTER_COPYRIGHT}}</div>
-
         </div>
     </footer>
+
+    <div id="modal" class="closed">
+        <div class="modal_window">
+            <h2>{{MODAL_TITLE}}</h2>
+            <p>{{MODAL_DESCRIPTION}}</p> 
+            <div class="bi">
+                <div>
+                    <h3>{{PHONE_TRANSLATION}}</h3>
+                    <span>{{FOOTER_PHONE}}</span>
+                </div>
+                <div>
+                    <h3>{{EMAIL_TRANSLATION}}</h3>
+                    <span>{{FOOTER_MAIL}}</span>
+                </div>
+            </div>
+            <a class="button" id="modal_close">{{MODAL_CLOSE}}</a>
+        </div>
+      </div>
+      <script type="module">
+        const modal = document.getElementById("modal");
+        const modal_window = document.querySelector("#modal > .modal_window");
+        const modal_close = document.getElementById("modal_close");
+        const button = document.getElementById("cta_button");
+
+        button.addEventListener("click", (e) => {
+            modal.classList.toggle("closed");
+        });
+
+        modal_close.addEventListener("click", (e) => {
+            modal.classList.add("closed");
+        });
+
+        modal.addEventListener("click", (e) => {
+            const window = e.target.closest(".modal_window");
+            if(!window) {
+                modal.classList.add("closed");
+            }
+        });
+
+
+      </script>
 </body>
 </html>

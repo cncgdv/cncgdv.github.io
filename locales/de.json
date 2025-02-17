@@ -15,5 +15,10 @@
     "FOOTER_ADDRESS": "<p>Veľká Maňa</p><p>Slowakische Republik</p>",
     "FOOTER_MAIL": "hello@gdvcnc.com",
     "FOOTER_PHONE": "+421 999 999 999",
-    "FOOTER_COPYRIGHT": "&copy; gdvcnc.com, 2025"
+    "FOOTER_COPYRIGHT": "&copy; gdvcnc.com, 2025",
+    "MODAL_TITLE": "Nehmen Sie Kontakt mit uns auf!",
+    "MODAL_DESCRIPTION": "Rufen Sie uns zwischen 8 und 16 Uhr an oder senden Sie uns eine E-Mail",
+    "EMAIL_TRANSLATION": "E-Mail",
+    "PHONE_TRANSLATION": "Telefon",
+    "MODAL_CLOSE": "Schließen"
 }

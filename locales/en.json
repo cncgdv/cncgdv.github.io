@@ -15,5 +15,10 @@
     "FOOTER_ADDRESS": "<p>Address to be added</p><p>Slovak Republic</p>",
     "FOOTER_MAIL": "hello@gdvcnc.com",
     "FOOTER_PHONE": "+421 999 999 999",
-    "FOOTER_COPYRIGHT": "&copy; gdvcnc.com, 2025"
+    "FOOTER_COPYRIGHT": "&copy; gdvcnc.com, 2025",
+    "MODAL_TITLE": "Let's get in touch!",
+    "MODAL_DESCRIPTION": "Call us between 8 AM and 4 PM or send us an Email",
+    "EMAIL_TRANSLATION": "Email",
+    "PHONE_TRANSLATION": "Phone",
+    "MODAL_CLOSE": "Close"
 }

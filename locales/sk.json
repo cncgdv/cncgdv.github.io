@@ -15,5 +15,10 @@
     "FOOTER_ADDRESS": "<p>Adresa bude doplnená</p><p>Slovenská republika</p>",
     "FOOTER_MAIL": "hello@gdvcnc.com",
     "FOOTER_PHONE": "+421 999 999 999",
-    "FOOTER_COPYRIGHT": "&copy; gdvcnc.com, 2025"
+    "FOOTER_COPYRIGHT": "&copy; gdvcnc.com, 2025",
+    "MODAL_TITLE": "Kontaktujte nás!",
+    "MODAL_DESCRIPTION": "Zavolajte nám medzi 8:00 a 16:00 hod alebo nám napíšte email",
+    "EMAIL_TRANSLATION": "Email",
+    "PHONE_TRANSLATION": "Telefón",
+    "MODAL_CLOSE": "Zavrieť"
 }
